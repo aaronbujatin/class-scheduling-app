@@ -1,0 +1,31 @@
+.bg-color {
+  --background: linear-gradient(180deg, rgba(113,226,206, 1) 0%, rgba(88,196,216, 1) 13.5%, rgba(77,166,229, 1) 33.33%, rgb(66,134,241) 100%) !important;
+}
+
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+ion-button {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 600;
+  --background: white;
+  --color: #0ea5e9;
+  --border-radius: 40px;
+  --padding-top: 10px;
+  --padding-bottom: 10px;
+  text-transform: initial;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: xx-large;
+  font-weight: 600;
+  color: white;
+}

@@ -1,0 +1,7 @@
+{
+  "name": "class-scheduling-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
