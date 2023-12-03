@@ -1,0 +1,29 @@
+ion-item { 
+    color: white;
+}
+
+.btn-view-schedule {
+    --box-shadow: none;
+    padding: 0;
+    box-shadow: none;
+    --border-radius: 14px;
+    color: rgba(66, 134, 241);
+    font-weight: 500;
+    text-transform: initial;
+    --background: white;
+}
+
+ion-card {
+    --background: rgba(113, 226, 206);
+    --background: -moz-linear-gradient(left, rgba(113, 226, 206) 0%, rgba(66, 134, 241) 100%);
+    --background: -webkit-gradient(left top, right top, color-stop(0%, rgba(113, 226, 206)), color-stop(100%, rgba(66, 134, 241)));
+    --background: -webkit-linear-gradient(left, rgba(113, 226, 206) 0%, rgba(66, 134, 241) 100%);
+    --background: -o-linear-gradient(left, rgba(113, 226, 206) 0%, rgba(66, 134, 241) 100%);
+    --background: -ms-linear-gradient(left, rgba(113, 226, 206) 0%, rgba(66, 134, 241) 100%);
+    --background: linear-gradient(to right, rgba(113, 226, 206) 0%, rgba(66, 134, 241) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ed2400, endColorstr=#006333, GradientType=1);
+    padding: 0;
+    box-shadow: none;
+    border-radius: 20px;
+ 
+}

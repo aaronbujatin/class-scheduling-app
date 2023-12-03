@@ -1,0 +1,76 @@
+.bg-color {
+  --background: linear-gradient(180deg, rgba(113, 226, 206, 1) 0%, rgba(88, 196, 216, 1) 13.5%, rgba(77, 166, 229, 1) 33.33%, rgb(66, 134, 241) 100%) !important;
+}
+
+#container {
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  ion-card-header {
+    text-align: center;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+  
+    /* Adjust this for spacing */
+    .centered-image {
+      height: 80px;
+      width: 200px;
+    }
+  }
+
+  .login-button {
+    --box-shadow:none;
+  }
+
+
+
+  
+}
+
+
+
+// ion-button {
+//   font-family: 'Montserrat', sans-serif !important;
+//   font-weight: 600;
+//   --background: white;
+//   --color: #0ea5e9;
+//   --border-radius: 40px;
+//   --padding-top: 10px;
+//   --padding-bottom: 10px;
+//   text-transform: initial;
+// }
+
+// h1 {
+//   font-family: 'Montserrat', sans-serif !important;
+//   font-size: xx-large;
+//   font-weight: 600;
+//   color: white;
+// }
+
+ion-button {
+  --background: rgba(113, 226, 206);
+  --background: -moz-linear-gradient(left, rgba(113, 226, 206) 0%, rgba(66, 134, 241) 100%);
+  --background: -webkit-gradient(left top, right top, color-stop(0%, rgba(113, 226, 206)), color-stop(100%, rgba(66, 134, 241)));
+  --background: -webkit-linear-gradient(left, rgba(113, 226, 206) 0%, rgba(66, 134, 241) 100%);
+  --background: -o-linear-gradient(left, rgba(113, 226, 206) 0%, rgba(66, 134, 241) 100%);
+  --background: -ms-linear-gradient(left, rgba(113, 226, 206) 0%, rgba(66, 134, 241) 100%);
+  --background: linear-gradient(to right, rgba(113, 226, 206) 0%, rgba(66, 134, 241) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ed2400, endColorstr=#006333, GradientType=1);
+  padding: 0;
+  box-shadow: none;
+  --border-radius: 14px;
+  color: white;
+  font-weight: bold;
+  text-transform: initial;
+  font-family: 'Montserrat', sans-serif !important;
+}
+

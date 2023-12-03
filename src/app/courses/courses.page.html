@@ -1,0 +1,24 @@
+<ion-content [fullscreen]="true">
+  <ion-toolbar color="clear">
+    <ion-title>Courses</ion-title>
+  </ion-toolbar>
+  <!-- <div class="ion-text-center" *ngIf="bookings?.length === 0">
+    <h5>
+      No added bookings yet
+    </h5>
+  </div> -->
+  <ion-list class="ion-no-padding" *ngFor="let course of courses">
+    <ion-card class="ion-no-border ion-no-padding">
+      <ion-card-content>
+        <ion-item lines="none" color="none" class="ion-no-padding ">
+          <ion-label>
+            <h2>Course abbreviation : {{course.abbreviation}}</h2>
+            <p>{{course.fullName}}</p>
+          </ion-label>
+        </ion-item>
+        <ion-button class="btn-view-schedule">View Schedule</ion-button>
+      </ion-card-content>
+    </ion-card>
+
+  </ion-list>
+</ion-content>
