@@ -1,0 +1,41 @@
+.reports-table {
+    overflow-x: auto;
+}
+
+.header-h2 {
+    color: #454f63;
+}
+.header-h4 {
+    color: #454f63;
+    font-size: 14px;
+}
+
+.inventory-content {
+    background-color: #f0f1f2;
+}
+
+.headers {
+    color: #454f63;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 10px;
+    word-wrap: break-word;
+}
+
+.border,
+.single-border {
+    border-bottom: 2px solid #989898;
+
+}
+
+.single-border {
+    padding-top: 12px;
+
+}
+
+.content {
+    color: #454f63;
+    font-family: "Montserrat";
+    font-size: 10px;
+}

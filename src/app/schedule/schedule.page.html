@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Schedules</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true" class="inventory-content">
+  <ion-toolbar color="clear">
+    <div class="ion-text-center header-h2">
+      <h2>{{course}}</h2>
+    </div>
+  </ion-toolbar>
+
+  <div *ngIf="schedules?.length === 0" class="ion-text-center header-h4">
+    <h4>You do not have yet a schedule for this course.</h4>
+  </div>
+  <div class="reports-table" scrollX="true" *ngIf="schedules?.length > 0">
+    <ion-grid>
+      <ion-row nowrap class="headers">
+        <ion-col class="single-border">
+          Subject
+        </ion-col>
+        <ion-col class="single-border">
+          Yr&Sec
+        </ion-col>
+        <!-- <ion-col class="single-border">
+          Semester
+        </ion-col> -->
+        <ion-col class="single-border">
+          Room#
+        </ion-col>
+        <ion-col class="single-border">
+          Days
+        </ion-col>
+        <ion-col class="single-border">
+          Course
+        </ion-col>
+        <ion-col class="single-border">
+          Time
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="content" *ngFor="let schedule of schedules">
+        <ion-col size=""> {{ schedule.subject }} </ion-col>
+        <ion-col size=""> {{ schedule.yearAndSection }} </ion-col>
+        <!-- <ion-col size=""> {{ schedule.semester }} </ion-col> -->
+        <ion-col size=""> {{ schedule.roomNumber }} </ion-col>
+        <ion-col size=""> {{ schedule.days }} </ion-col>
+        <ion-col size=""> {{ schedule.course }} </ion-col>
+        <ion-col size=""> {{ schedule.startTime | timeFormat }} - {{ schedule.endTime | timeFormat}} </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <!-- <ngx-datatable [rows]="schedules" [ngClass]="tableStyle" [rowHeight]="'auto'" [headerHeight]="50" [columnMode]="'force'" >
+    <ngx-datatable-column name="subject"></ngx-datatable-column>
+    <ngx-datatable-column name="yearAndSection"></ngx-datatable-column>
+    <ngx-datatable-column name="roomNumber"></ngx-datatable-column>
+    <ngx-datatable-column name="days"></ngx-datatable-column>
+    <ngx-datatable-column name="course"></ngx-datatable-column>
+    <ngx-datatable-column name="startTime"></ngx-datatable-column>
+    <ngx-datatable-column name="endTime"></ngx-datatable-column>
+  </ngx-datatable> -->
+
+</ion-content>

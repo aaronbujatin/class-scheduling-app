@@ -11,10 +11,10 @@
         <ion-img class="centered-image"  src="assets/img/logo.png"></ion-img>
       </div>
       <ion-card-content class="">
-        <ion-input label="Username"  label-placement="floating" fill="outline" color="dark"
+        <ion-input label="Username"  [(ngModel)]="username" label-placement="floating" fill="outline" color="dark"
           placeholder="Enter username"></ion-input>
         <br>
-        <ion-input type="password" label="Password"  label-placement="floating" fill="outline"
+        <ion-input type="password" label="Password"  [(ngModel)]="password" label-placement="floating" fill="outline"
           color="dark" placeholder="Enter password"></ion-input>
         <br>
         <ion-button class="login-button" size="full" (click)="loginBtn()">Login</ion-button>
